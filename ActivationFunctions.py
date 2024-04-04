@@ -36,7 +36,7 @@ class LeakyRelu:
         self.a = a
 
     def forward(self, layer_input):
-        return np.maximum(self.a*layer_input,layer_input)
+        return (layer_input<0)*self.a*layer_input+(layer_input>0)*layer_input
 
     def backward(self, gradient, layer_input):
-        return (layer_input<0)*self.a*gradient+(layer_input>0)*gradient
+        return ((layer_input<0)*self.a+(layer_input>0))*gradient
