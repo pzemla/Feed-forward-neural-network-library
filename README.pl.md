@@ -3,6 +3,10 @@
 
 ## Przegląd
 Podstawowa biblioteka napisana w języku Python do tworzenia sieci neuronowych typu feed forward, zawierająca opcje funkcji aktywacji, funkcji straty, optymalizatorów oraz dropout. Plik `main.py` zawiera przykład trenowania sieci neuronowej stworzonej do klasyfikacji, czy osoba ma chorobę serca na podstawie danych z pliku `heart.dat` po ich wstępnym przetwarzaniu.
+Projekt ten służy jako ćwiczenie edukacyjne mające na celu zrozumienie zasad matematycznych, na których opierają się sieci neuronowe.
+
+# Jak używać
+Korzystanie z biblioteki jest podobne do biblioteki Pytorch, na której została oparta (z bardziej ograniczonymi możliwościami). Bardziej szczegółowe informacje o klasach, ich funkcjach i argumentach znajdują się w pliku Dokumentacja.pdf. Aby zobaczyć przykład sieci neuronowej zaimplementowanej z biblioteką, upewnij się, że wszystkie pliki .py, a także plik heart.dat znajdują się w jednym folderze i uruchom plik main.py, który zawiera aplikację sieci neuronowej typu feed forward.
 
 ## Pliki:
 **Loader danych** – służy do efektywnego ładowania i iterowania po zbiorach danych w trakcie trenowania i oceny sieci neuronowej.
@@ -31,5 +35,3 @@ Podstawowa biblioteka napisana w języku Python do tworzenia sieci neuronowych t
 
 ## Licencja
 Ten projekt jest dostępny na licencji MIT - zobacz plik LICENSE dla szczegółów.
-
-

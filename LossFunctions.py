@@ -17,7 +17,9 @@ class MAELoss:
 
 class BCELoss:
     def loss(self,y_pred,y_true):
-        return -(y_true * max(np.log(y_pred),-100) + (1 - y_true) * max(np.log(1 - y_pred),-100)).mean()
+        y_pred = np.clip(y_pred, 1e-12, 1 - 1e-12)
+        return -(y_true * np.log(y_pred) + (1 - y_true) * np.log(1 - y_pred)).mean()
 
     def loss_gradient(self,y_pred,y_true):
-        return ((y_pred-y_true) / ((1-y_pred)*y_pred))
+        y_pred = np.clip(y_pred, 1e-12, 1 - 1e-12)
+        return (y_pred - y_true) / (y_pred * (1 - y_pred))

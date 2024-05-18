@@ -3,6 +3,10 @@
 
 ## Overview
 A basic python library for making feed forward neural networks, with some options for activation functions, loss functions, optimizers and dropout. File ‘main.py’ contains example of training neural network made to classify if person has heart disease based on data from file ‘heart.dat’ after preprocessing it.
+This project serves as an educational exercise for understanding mathematical principles on which neural networks are based.
+
+## How to use
+Library use is similar to Pytorch library, on which it was based (with more limited possible uses). More specific informations about classes, their functions and arguments are in file Documentation.pdf. To see example of neural network implemented with library, make sure all .py files, as well as heart.dat file are in one directory and run main.py file, which contains application of feed forward neural network.
 
 ## Files:
 **Data loader** – used to effectively load and iterate datasets to neural network during training and evaluation.
